@@ -59,7 +59,7 @@ namespace Coffee_management_store
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            int a = 0;
         }
     }
 }
