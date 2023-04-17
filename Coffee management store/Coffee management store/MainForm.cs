@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coffee_management_store.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,17 @@ namespace Coffee_management_store
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbIDoder_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monlythPayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            monthlyPayForm pay = new monthlyPayForm();
+            pay.ShowDialog();
         }
     }
 }

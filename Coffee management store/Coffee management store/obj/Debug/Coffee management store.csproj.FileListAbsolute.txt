@@ -1,0 +1,14 @@
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe.config
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\bin\Debug\Coffee management store.pdb
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.AssemblyReference.cache
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.SuggestedBindingRedirects.cache
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.EmployeeForm.resources
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.LoginForm.resources
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.MainForm.resources
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.Properties.Resources.resources
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.GenerateResource.cache
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.CoreCompileInputs.cache
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.exe
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee management store.pdb
+D:\1. IT\HK2-22-23\6.DBMS\git-clone2\coffee-store\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.UI.monthlyPayForm.resources
