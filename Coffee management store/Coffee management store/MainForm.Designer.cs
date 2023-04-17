@@ -40,6 +40,7 @@
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesTrackingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeSchedulingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monlythPayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.OrderTab = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -83,7 +84,23 @@
             this.SupplierTab = new System.Windows.Forms.TabPage();
             this.Money_PayTab = new System.Windows.Forms.TabPage();
             this.coffee_Management_DatabaseDataSet1 = new Coffee_management_store.Coffee_Management_DatabaseDataSet();
-            this.monlythPayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dgvThanhPho = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnChange = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtPenalty = new System.Windows.Forms.TextBox();
+            this.txtTotalSalary = new System.Windows.Forms.TextBox();
+            this.txtDayAbsent = new System.Windows.Forms.TextBox();
+            this.txtEID = new System.Windows.Forms.TextBox();
+            this.txtMonth = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.OrderTab.SuspendLayout();
@@ -94,7 +111,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVDetailOder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabInvoice.SuspendLayout();
+            this.Money_PayTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.coffee_Management_DatabaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThanhPho)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -106,7 +125,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(1781, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1781, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,20 +135,20 @@
             this.loginToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
             this.menuToolStripMenuItem.Text = "Menu system";
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -145,7 +164,7 @@
             this.employeeSchedulingToolStripMenuItem,
             this.monlythPayToolStripMenuItem});
             this.managementToolStripMenuItem.Name = "managementToolStripMenuItem";
-            this.managementToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.managementToolStripMenuItem.Size = new System.Drawing.Size(111, 26);
             this.managementToolStripMenuItem.Text = "Management";
             // 
             // menuToolStripMenuItem1
@@ -191,6 +210,13 @@
             this.employeeSchedulingToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
             this.employeeSchedulingToolStripMenuItem.Text = "Employee scheduling";
             // 
+            // monlythPayToolStripMenuItem
+            // 
+            this.monlythPayToolStripMenuItem.Name = "monlythPayToolStripMenuItem";
+            this.monlythPayToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.monlythPayToolStripMenuItem.Text = "Monlyth Pay";
+            this.monlythPayToolStripMenuItem.Click += new System.EventHandler(this.monlythPayToolStripMenuItem_Click);
+            // 
             // TabControl
             // 
             this.TabControl.Controls.Add(this.OrderTab);
@@ -202,10 +228,10 @@
             this.TabControl.Controls.Add(this.SupplierTab);
             this.TabControl.Controls.Add(this.Money_PayTab);
             this.TabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabControl.Location = new System.Drawing.Point(0, 28);
+            this.TabControl.Location = new System.Drawing.Point(0, 30);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(1781, 711);
+            this.TabControl.Size = new System.Drawing.Size(1781, 709);
             this.TabControl.TabIndex = 2;
             // 
             // OrderTab
@@ -236,7 +262,7 @@
             this.OrderTab.Location = new System.Drawing.Point(4, 25);
             this.OrderTab.Name = "OrderTab";
             this.OrderTab.Padding = new System.Windows.Forms.Padding(3);
-            this.OrderTab.Size = new System.Drawing.Size(1773, 682);
+            this.OrderTab.Size = new System.Drawing.Size(1773, 680);
             this.OrderTab.TabIndex = 0;
             this.OrderTab.Text = "Order";
             this.OrderTab.UseVisualStyleBackColor = true;
@@ -439,7 +465,7 @@
             this.CustomerTab.Location = new System.Drawing.Point(4, 25);
             this.CustomerTab.Name = "CustomerTab";
             this.CustomerTab.Padding = new System.Windows.Forms.Padding(3);
-            this.CustomerTab.Size = new System.Drawing.Size(1773, 682);
+            this.CustomerTab.Size = new System.Drawing.Size(1773, 680);
             this.CustomerTab.TabIndex = 1;
             this.CustomerTab.Text = "Customer";
             this.CustomerTab.UseVisualStyleBackColor = true;
@@ -449,7 +475,7 @@
             this.InventoryTab.Location = new System.Drawing.Point(4, 25);
             this.InventoryTab.Name = "InventoryTab";
             this.InventoryTab.Padding = new System.Windows.Forms.Padding(3);
-            this.InventoryTab.Size = new System.Drawing.Size(1773, 682);
+            this.InventoryTab.Size = new System.Drawing.Size(1773, 680);
             this.InventoryTab.TabIndex = 2;
             this.InventoryTab.Text = "Inventory";
             this.InventoryTab.UseVisualStyleBackColor = true;
@@ -470,7 +496,7 @@
             this.tabInvoice.Location = new System.Drawing.Point(4, 25);
             this.tabInvoice.Name = "tabInvoice";
             this.tabInvoice.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInvoice.Size = new System.Drawing.Size(1773, 682);
+            this.tabInvoice.Size = new System.Drawing.Size(1773, 680);
             this.tabInvoice.TabIndex = 3;
             this.tabInvoice.Text = "Invoice";
             this.tabInvoice.UseVisualStyleBackColor = true;
@@ -582,7 +608,7 @@
             this.AccountTab.Location = new System.Drawing.Point(4, 25);
             this.AccountTab.Name = "AccountTab";
             this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountTab.Size = new System.Drawing.Size(1773, 682);
+            this.AccountTab.Size = new System.Drawing.Size(1773, 680);
             this.AccountTab.TabIndex = 4;
             this.AccountTab.Text = "Account";
             this.AccountTab.UseVisualStyleBackColor = true;
@@ -592,7 +618,7 @@
             this.MenuTab.Location = new System.Drawing.Point(4, 25);
             this.MenuTab.Name = "MenuTab";
             this.MenuTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MenuTab.Size = new System.Drawing.Size(1773, 682);
+            this.MenuTab.Size = new System.Drawing.Size(1773, 680);
             this.MenuTab.TabIndex = 5;
             this.MenuTab.Text = "Menu";
             this.MenuTab.UseVisualStyleBackColor = true;
@@ -602,32 +628,195 @@
             this.SupplierTab.Location = new System.Drawing.Point(4, 25);
             this.SupplierTab.Name = "SupplierTab";
             this.SupplierTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SupplierTab.Size = new System.Drawing.Size(1773, 682);
+            this.SupplierTab.Size = new System.Drawing.Size(1773, 680);
             this.SupplierTab.TabIndex = 6;
             this.SupplierTab.Text = "Supplier";
             this.SupplierTab.UseVisualStyleBackColor = true;
             // 
             // Money_PayTab
             // 
+            this.Money_PayTab.Controls.Add(this.btnLoad);
+            this.Money_PayTab.Controls.Add(this.btnCancel);
+            this.Money_PayTab.Controls.Add(this.btnSave);
+            this.Money_PayTab.Controls.Add(this.dgvThanhPho);
+            this.Money_PayTab.Controls.Add(this.btnDelete);
+            this.Money_PayTab.Controls.Add(this.btnChange);
+            this.Money_PayTab.Controls.Add(this.btnAdd);
+            this.Money_PayTab.Controls.Add(this.label19);
+            this.Money_PayTab.Controls.Add(this.label20);
+            this.Money_PayTab.Controls.Add(this.label21);
+            this.Money_PayTab.Controls.Add(this.label22);
+            this.Money_PayTab.Controls.Add(this.label23);
+            this.Money_PayTab.Controls.Add(this.txtPenalty);
+            this.Money_PayTab.Controls.Add(this.txtTotalSalary);
+            this.Money_PayTab.Controls.Add(this.txtDayAbsent);
+            this.Money_PayTab.Controls.Add(this.txtEID);
+            this.Money_PayTab.Controls.Add(this.txtMonth);
             this.Money_PayTab.Location = new System.Drawing.Point(4, 25);
             this.Money_PayTab.Name = "Money_PayTab";
             this.Money_PayTab.Padding = new System.Windows.Forms.Padding(3);
-            this.Money_PayTab.Size = new System.Drawing.Size(1773, 682);
+            this.Money_PayTab.Size = new System.Drawing.Size(1773, 680);
             this.Money_PayTab.TabIndex = 7;
             this.Money_PayTab.Text = "Money Pay";
             this.Money_PayTab.UseVisualStyleBackColor = true;
+            this.Money_PayTab.Click += new System.EventHandler(this.Money_PayTab_Click);
             // 
             // coffee_Management_DatabaseDataSet1
             // 
             this.coffee_Management_DatabaseDataSet1.DataSetName = "Coffee_Management_DatabaseDataSet";
             this.coffee_Management_DatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // monlythPayToolStripMenuItem
+            // btnSave
             // 
-            this.monlythPayToolStripMenuItem.Name = "monlythPayToolStripMenuItem";
-            this.monlythPayToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
-            this.monlythPayToolStripMenuItem.Text = "Monlyth Pay";
-            this.monlythPayToolStripMenuItem.Click += new System.EventHandler(this.monlythPayToolStripMenuItem_Click);
+            this.btnSave.Location = new System.Drawing.Point(979, 300);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(63, 36);
+            this.btnSave.TabIndex = 29;
+            this.btnSave.Text = "save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // dgvThanhPho
+            // 
+            this.dgvThanhPho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThanhPho.Location = new System.Drawing.Point(528, 377);
+            this.dgvThanhPho.Name = "dgvThanhPho";
+            this.dgvThanhPho.RowHeadersWidth = 51;
+            this.dgvThanhPho.RowTemplate.Height = 24;
+            this.dgvThanhPho.Size = new System.Drawing.Size(670, 201);
+            this.dgvThanhPho.TabIndex = 28;
+            this.dgvThanhPho.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThanhPho_CellClick);
+            this.dgvThanhPho.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThanhPho_CellContentClick);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(860, 300);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(63, 36);
+            this.btnDelete.TabIndex = 27;
+            this.btnDelete.Text = "delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnChange
+            // 
+            this.btnChange.Location = new System.Drawing.Point(751, 300);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(63, 36);
+            this.btnChange.TabIndex = 26;
+            this.btnChange.Text = "change";
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(649, 302);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(63, 36);
+            this.btnAdd.TabIndex = 25;
+            this.btnAdd.Text = "add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1006, 111);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(74, 16);
+            this.label19.TabIndex = 24;
+            this.label19.Text = "total Salary";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(780, 195);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(52, 16);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "Penalty";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(763, 108);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(77, 16);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Day Absent";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(513, 195);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(43, 16);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "Month";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(513, 111);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(33, 16);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "E-ID";
+            // 
+            // txtPenalty
+            // 
+            this.txtPenalty.Location = new System.Drawing.Point(846, 189);
+            this.txtPenalty.Name = "txtPenalty";
+            this.txtPenalty.Size = new System.Drawing.Size(70, 22);
+            this.txtPenalty.TabIndex = 19;
+            // 
+            // txtTotalSalary
+            // 
+            this.txtTotalSalary.Location = new System.Drawing.Point(1086, 108);
+            this.txtTotalSalary.Name = "txtTotalSalary";
+            this.txtTotalSalary.Size = new System.Drawing.Size(173, 22);
+            this.txtTotalSalary.TabIndex = 18;
+            // 
+            // txtDayAbsent
+            // 
+            this.txtDayAbsent.Location = new System.Drawing.Point(846, 105);
+            this.txtDayAbsent.Name = "txtDayAbsent";
+            this.txtDayAbsent.Size = new System.Drawing.Size(77, 22);
+            this.txtDayAbsent.TabIndex = 17;
+            // 
+            // txtEID
+            // 
+            this.txtEID.Location = new System.Drawing.Point(572, 105);
+            this.txtEID.Name = "txtEID";
+            this.txtEID.Size = new System.Drawing.Size(168, 22);
+            this.txtEID.TabIndex = 16;
+            // 
+            // txtMonth
+            // 
+            this.txtMonth.Location = new System.Drawing.Point(572, 189);
+            this.txtMonth.Name = "txtMonth";
+            this.txtMonth.Size = new System.Drawing.Size(168, 22);
+            this.txtMonth.TabIndex = 15;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(1101, 302);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(96, 33);
+            this.btnCancel.TabIndex = 30;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(528, 300);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(84, 38);
+            this.btnLoad.TabIndex = 31;
+            this.btnLoad.Text = "load data";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // MainForm
             // 
@@ -653,7 +842,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabInvoice.ResumeLayout(false);
             this.tabInvoice.PerformLayout();
+            this.Money_PayTab.ResumeLayout(false);
+            this.Money_PayTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.coffee_Management_DatabaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThanhPho)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -717,5 +909,22 @@
         private System.Windows.Forms.TabPage SupplierTab;
         private System.Windows.Forms.TabPage Money_PayTab;
         private System.Windows.Forms.ToolStripMenuItem monlythPayToolStripMenuItem;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvThanhPho;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnChange;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtPenalty;
+        private System.Windows.Forms.TextBox txtTotalSalary;
+        private System.Windows.Forms.TextBox txtDayAbsent;
+        private System.Windows.Forms.TextBox txtEID;
+        private System.Windows.Forms.TextBox txtMonth;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnLoad;
     }
 }

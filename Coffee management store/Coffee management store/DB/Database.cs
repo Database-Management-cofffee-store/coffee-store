@@ -14,9 +14,9 @@ namespace Coffee_management_store.DB
 {
     class Database
     {
-        string ConnStr = @"Data Source=CAO;Initial Catalog=CoffeeShop;Integrated Security=True";
-        /*string ConnStr 
-       = "Data Source=DESKTOP-M2VOT0C\\MSSQLSERVER01;Initial Catalog=CoffeeShopReal;Integrated Security=True";*/
+        //string ConnStr = @"Data Source=CAO;Initial Catalog=CoffeeShop;Integrated Security=True";
+        string ConnStr
+       = "Data Source=DESKTOP-M2VOT0C\\MSSQLSERVER01;Initial Catalog=CoffeeShopReal;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

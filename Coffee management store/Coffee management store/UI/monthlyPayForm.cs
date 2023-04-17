@@ -172,5 +172,55 @@ namespace Coffee_management_store.UI
             this.btnAdd.Enabled = false;
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPenalty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotalSalary_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDayAbsent_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMonth_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
