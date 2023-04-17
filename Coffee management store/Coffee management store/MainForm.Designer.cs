@@ -42,6 +42,12 @@
             this.employeeSchedulingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.OrderTab = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tbIDCustomer = new System.Windows.Forms.TextBox();
+            this.tbIDEmp = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.ptbCreatInvoiceAndLoaddata = new System.Windows.Forms.PictureBox();
             this.ptbDeleteIteam = new System.Windows.Forms.PictureBox();
             this.ptbAddIteam = new System.Windows.Forms.PictureBox();
@@ -61,28 +67,23 @@
             this.CustomerTab = new System.Windows.Forms.TabPage();
             this.InventoryTab = new System.Windows.Forms.TabPage();
             this.tabInvoice = new System.Windows.Forms.TabPage();
-            this.lbNameCustomer = new System.Windows.Forms.Label();
-            this.lbInvoice = new System.Windows.Forms.Label();
-            this.coffee_Management_DatabaseDataSet1 = new Coffee_management_store.Coffee_Management_DatabaseDataSet();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tbIDEmp = new System.Windows.Forms.TextBox();
-            this.tbIDCustomer = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbNameCustomer = new System.Windows.Forms.Label();
+            this.lbInvoice = new System.Windows.Forms.Label();
             this.AccountTab = new System.Windows.Forms.TabPage();
             this.MenuTab = new System.Windows.Forms.TabPage();
             this.SupplierTab = new System.Windows.Forms.TabPage();
             this.Money_PayTab = new System.Windows.Forms.TabPage();
+            this.coffee_Management_DatabaseDataSet1 = new Coffee_management_store.Coffee_Management_DatabaseDataSet();
+            this.monlythPayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.OrderTab.SuspendLayout();
@@ -141,7 +142,8 @@
             this.customerToolStripMenuItem,
             this.inventoryToolStripMenuItem,
             this.salesTrackingToolStripMenuItem,
-            this.employeeSchedulingToolStripMenuItem});
+            this.employeeSchedulingToolStripMenuItem,
+            this.monlythPayToolStripMenuItem});
             this.managementToolStripMenuItem.Name = "managementToolStripMenuItem";
             this.managementToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.managementToolStripMenuItem.Text = "Management";
@@ -239,6 +241,59 @@
             this.OrderTab.Text = "Order";
             this.OrderTab.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1384, 375);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 50);
+            this.textBox1.TabIndex = 15;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(1307, 388);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 16);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "coupon";
+            // 
+            // tbIDCustomer
+            // 
+            this.tbIDCustomer.Location = new System.Drawing.Point(1056, 484);
+            this.tbIDCustomer.Multiline = true;
+            this.tbIDCustomer.Name = "tbIDCustomer";
+            this.tbIDCustomer.Size = new System.Drawing.Size(213, 50);
+            this.tbIDCustomer.TabIndex = 13;
+            // 
+            // tbIDEmp
+            // 
+            this.tbIDEmp.Location = new System.Drawing.Point(1310, 484);
+            this.tbIDEmp.Multiline = true;
+            this.tbIDEmp.Name = "tbIDEmp";
+            this.tbIDEmp.Size = new System.Drawing.Size(206, 50);
+            this.tbIDEmp.TabIndex = 13;
+            this.tbIDEmp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(1053, 450);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 16);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "ID Customer";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1307, 450);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 16);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "ID Employee";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // ptbCreatInvoiceAndLoaddata
             // 
             this.ptbCreatInvoiceAndLoaddata.Location = new System.Drawing.Point(927, 484);
@@ -302,6 +357,7 @@
             this.tbIDoder.Name = "tbIDoder";
             this.tbIDoder.Size = new System.Drawing.Size(100, 35);
             this.tbIDoder.TabIndex = 7;
+            this.tbIDoder.TextChanged += new System.EventHandler(this.tbIDoder_TextChanged);
             // 
             // label6
             // 
@@ -419,67 +475,32 @@
             this.tabInvoice.Text = "Invoice";
             this.tabInvoice.UseVisualStyleBackColor = true;
             // 
-            // lbNameCustomer
+            // label15
             // 
-            this.lbNameCustomer.AutoSize = true;
-            this.lbNameCustomer.Location = new System.Drawing.Point(185, 113);
-            this.lbNameCustomer.Name = "lbNameCustomer";
-            this.lbNameCustomer.Size = new System.Drawing.Size(110, 16);
-            this.lbNameCustomer.TabIndex = 1;
-            this.lbNameCustomer.Text = "Name Customer :";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(499, 395);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 16);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Final Total : ";
             // 
-            // lbInvoice
+            // label14
             // 
-            this.lbInvoice.AutoEllipsis = true;
-            this.lbInvoice.AutoSize = true;
-            this.lbInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInvoice.Location = new System.Drawing.Point(356, 22);
-            this.lbInvoice.Name = "lbInvoice";
-            this.lbInvoice.Size = new System.Drawing.Size(160, 52);
-            this.lbInvoice.TabIndex = 0;
-            this.lbInvoice.Text = "Invoice";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(657, 154);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 16);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Employee ID :";
             // 
-            // coffee_Management_DatabaseDataSet1
+            // label13
             // 
-            this.coffee_Management_DatabaseDataSet1.DataSetName = "Coffee_Management_DatabaseDataSet";
-            this.coffee_Management_DatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(188, 155);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 16);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "ID/ Number :";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(188, 191);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 16);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Name Item";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(373, 190);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 16);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "quality";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(188, 319);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 16);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Coupon";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(188, 350);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 16);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Delyvery";
             // 
             // label11
             // 
@@ -499,85 +520,62 @@
             this.label12.TabIndex = 4;
             this.label12.Text = "Date";
             // 
-            // label13
+            // label10
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(188, 350);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 16);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Delyvery";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(188, 319);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 16);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Coupon";
             // 
-            // label14
+            // label9
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(657, 154);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 16);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Employee ID :";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(373, 190);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 16);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "quality";
             // 
-            // label15
+            // label8
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(499, 395);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 16);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Final Total : ";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(188, 191);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 16);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Name Item";
             // 
-            // label16
+            // label7
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1307, 450);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 16);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "ID Employee";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(188, 155);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 16);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "ID/ Number :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label17
+            // lbNameCustomer
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(1053, 450);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(80, 16);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "ID Customer";
+            this.lbNameCustomer.AutoSize = true;
+            this.lbNameCustomer.Location = new System.Drawing.Point(185, 113);
+            this.lbNameCustomer.Name = "lbNameCustomer";
+            this.lbNameCustomer.Size = new System.Drawing.Size(110, 16);
+            this.lbNameCustomer.TabIndex = 1;
+            this.lbNameCustomer.Text = "Name Customer :";
             // 
-            // tbIDEmp
+            // lbInvoice
             // 
-            this.tbIDEmp.Location = new System.Drawing.Point(1310, 484);
-            this.tbIDEmp.Multiline = true;
-            this.tbIDEmp.Name = "tbIDEmp";
-            this.tbIDEmp.Size = new System.Drawing.Size(206, 50);
-            this.tbIDEmp.TabIndex = 13;
-            this.tbIDEmp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // tbIDCustomer
-            // 
-            this.tbIDCustomer.Location = new System.Drawing.Point(1056, 484);
-            this.tbIDCustomer.Multiline = true;
-            this.tbIDCustomer.Name = "tbIDCustomer";
-            this.tbIDCustomer.Size = new System.Drawing.Size(213, 50);
-            this.tbIDCustomer.TabIndex = 13;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(1307, 388);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 16);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "coupon";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(1384, 375);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 50);
-            this.textBox1.TabIndex = 15;
+            this.lbInvoice.AutoEllipsis = true;
+            this.lbInvoice.AutoSize = true;
+            this.lbInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInvoice.Location = new System.Drawing.Point(356, 22);
+            this.lbInvoice.Name = "lbInvoice";
+            this.lbInvoice.Size = new System.Drawing.Size(160, 51);
+            this.lbInvoice.TabIndex = 0;
+            this.lbInvoice.Text = "Invoice";
             // 
             // AccountTab
             // 
@@ -618,6 +616,18 @@
             this.Money_PayTab.TabIndex = 7;
             this.Money_PayTab.Text = "Money Pay";
             this.Money_PayTab.UseVisualStyleBackColor = true;
+            // 
+            // coffee_Management_DatabaseDataSet1
+            // 
+            this.coffee_Management_DatabaseDataSet1.DataSetName = "Coffee_Management_DatabaseDataSet";
+            this.coffee_Management_DatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // monlythPayToolStripMenuItem
+            // 
+            this.monlythPayToolStripMenuItem.Name = "monlythPayToolStripMenuItem";
+            this.monlythPayToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.monlythPayToolStripMenuItem.Text = "Monlyth Pay";
+            this.monlythPayToolStripMenuItem.Click += new System.EventHandler(this.monlythPayToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -706,5 +716,6 @@
         private System.Windows.Forms.TabPage MenuTab;
         private System.Windows.Forms.TabPage SupplierTab;
         private System.Windows.Forms.TabPage Money_PayTab;
+        private System.Windows.Forms.ToolStripMenuItem monlythPayToolStripMenuItem;
     }
 }
