@@ -52,6 +52,7 @@
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(168, 22);
             this.txtMonth.TabIndex = 0;
+            this.txtMonth.TextChanged += new System.EventHandler(this.txtMonth_TextChanged);
             // 
             // txtEID
             // 
@@ -59,6 +60,7 @@
             this.txtEID.Name = "txtEID";
             this.txtEID.Size = new System.Drawing.Size(168, 22);
             this.txtEID.TabIndex = 1;
+            this.txtEID.TextChanged += new System.EventHandler(this.txtEID_TextChanged);
             // 
             // txtDayAbsent
             // 
@@ -66,6 +68,7 @@
             this.txtDayAbsent.Name = "txtDayAbsent";
             this.txtDayAbsent.Size = new System.Drawing.Size(77, 22);
             this.txtDayAbsent.TabIndex = 2;
+            this.txtDayAbsent.TextChanged += new System.EventHandler(this.txtDayAbsent_TextChanged);
             // 
             // txtTotalSalary
             // 
@@ -73,6 +76,7 @@
             this.txtTotalSalary.Name = "txtTotalSalary";
             this.txtTotalSalary.Size = new System.Drawing.Size(173, 22);
             this.txtTotalSalary.TabIndex = 3;
+            this.txtTotalSalary.TextChanged += new System.EventHandler(this.txtTotalSalary_TextChanged);
             // 
             // txtPenalty
             // 
@@ -80,6 +84,7 @@
             this.txtPenalty.Name = "txtPenalty";
             this.txtPenalty.Size = new System.Drawing.Size(70, 22);
             this.txtPenalty.TabIndex = 4;
+            this.txtPenalty.TextChanged += new System.EventHandler(this.txtPenalty_TextChanged);
             // 
             // label1
             // 
@@ -89,6 +94,7 @@
             this.label1.Size = new System.Drawing.Size(33, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "E-ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -98,6 +104,7 @@
             this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Month";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -107,6 +114,7 @@
             this.label3.Size = new System.Drawing.Size(77, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Day Absent";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -116,6 +124,7 @@
             this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Penalty";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -125,6 +134,7 @@
             this.label5.Size = new System.Drawing.Size(74, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "total Salary";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnAdd
             // 
