@@ -1,0 +1,28 @@
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe.config
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\bin\Debug\Coffee management store.pdb
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.AssemblyReference.cache
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.SuggestedBindingRedirects.cache
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.Properties.Resources.resources
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.GenerateResource.cache
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.CoreCompileInputs.cache
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.exe
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee management store.pdb
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.LoginForm.resources
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.MainForm.resources
+D:\UTE\year 2 hk2\Database management system\exam\Source code coffee management\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.EmployeeForm.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe.config
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\bin\Debug\Coffee management store.exe
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\bin\Debug\Coffee management store.pdb
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.AssemblyReference.cache
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.SuggestedBindingRedirects.cache
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.EmployeeForm.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.LoginForm.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.MainForm.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.Properties.Resources.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.GenerateResource.cache
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.csproj.CoreCompileInputs.cache
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.exe
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee management store.pdb
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.Inventory.resources
+C:\Users\FPT-ACER\Downloads\Coffee management store\Coffee management store\obj\Debug\Coffee_management_store.Customer.resources
